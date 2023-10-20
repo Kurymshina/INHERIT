@@ -16,7 +16,7 @@ class TaskTest {
 
 
     @ParameterizedTest
-    @CsvFileSource(files = "src\\test\\java\\resources\\tasks.csv")
+    @CsvFileSource(files = "src/test/java/resources/tasks.csv")
     void shouldFindMeetingWhichMatchesTheSearchQuery(int id, String topic, String project, String start, String query, boolean expected) {
         Meeting meet = new Meeting(id, topic, project, start);
 
